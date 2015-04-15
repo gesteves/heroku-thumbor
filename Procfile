@@ -1,0 +1,1 @@
+web: thumbor -p $PORT
