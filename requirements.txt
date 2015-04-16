@@ -1,2 +1,2 @@
 thumbor>=4.12.2
-redis==3.0.0
+redis==2.10.3
