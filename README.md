@@ -1,6 +1,6 @@
 # Biscayne
 
-A Heroku-ready Thumbor install
+A Heroku-ready Thumbor install with webp support.
 
 ## Installation
 
