@@ -1,6 +1,12 @@
-A Heroku-ready Thumbor install with WebP support.
+An unofficial Heroku-ready Thumbor install with WebP support.
 
 # Installation
+
+Just press this button:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) 
+
+Or, follow these steps:
 
 1. Clone repo
 2. `heroku create`
