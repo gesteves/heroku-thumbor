@@ -15,6 +15,24 @@ Or, follow these steps:
 5. `git push heroku master` (the first deploy will take about 10 minutes)
 6. Done!
 
+# Run in localhost (Docker compose)
+
+Run:
+
+```bash
+$ cp .env.dist .env
+```
+
+Edit your `.env` file changing environment variables.
+Now run:
+
+```bash
+$ docker-compose build
+$ docker-compose up
+```
+
+Now you can open in your localhost: `http://localhost:8000/unsafe/300x200/http://lorempixel.com/500/500`.
+
 # Notes
 
 [OpenCV isn't included](https://github.com/gesteves/biscayne/issues/1) in this installation because of Heroku's compiled slug size limits, so [Thumbor's smart cropping](https://github.com/thumbor/thumbor/wiki/Detection-algorithms) isn't supported at this time.
