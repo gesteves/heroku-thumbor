@@ -9,7 +9,7 @@
   "website": "https://github.com/thumbor/thumbor/wiki",
   "repository": "https://github.com/gesteves/biscayne",
   "env": {
-    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi",
+    "BUILDPACK_URL": "heroku/python",
     "THUMBOR_SECURITY_KEY": {
       "description": "A secret key to prevent URL tampering.",
       "generator": "secret"
