@@ -1,1 +1,1 @@
-web: thumbor -p $PORT
+web: thumbor -p $PORT -c /app/thumbor.conf

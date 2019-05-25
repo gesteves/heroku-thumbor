@@ -1,4 +1,4 @@
-An unofficial Heroku-ready Thumbor install with WebP support.
+An unofficial Heroku-ready Thumbor install with WebP support and OpenCV support
 
 # Installation
 
@@ -10,11 +10,12 @@ Or, follow these steps:
 
 1. Clone repo
 2. `heroku create`
-3. `heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi`
-4. `heroku config:set THUMBOR_SECURITY_KEY=123456` (you should probably choose a better key)
+3. `heroku buildpacks:set heroku/python`
+4. `heroku buildpacks:add --index 1 heroku-community/apt`
+5. `heroku buildpacks:add https://github.com/q-m/heroku-buildpack-imagemagick --index 2 --app HEROKU_APP_NAME`
 5. `git push heroku master` (the first deploy will take about 10 minutes)
 6. Done!
 
 # Notes
 
-[OpenCV isn't included](https://github.com/gesteves/biscayne/issues/1) in this installation because of Heroku's compiled slug size limits, so [Thumbor's smart cropping](https://github.com/thumbor/thumbor/wiki/Detection-algorithms) isn't supported at this time.
+[Thumbor's smart cropping](https://github.com/thumbor/thumbor/wiki/Detection-algorithms) is supported at this time.
