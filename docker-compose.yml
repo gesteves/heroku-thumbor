@@ -4,8 +4,10 @@ services:
   app:
     build: .
     command: honcho run thumbor -p 8000 -c thumbor.conf
+    stdin_open: true
+    tty: true
     volumes:
       - .:/app
     ports:
       - "8000:8000"
-
+      - "8001:8001"
