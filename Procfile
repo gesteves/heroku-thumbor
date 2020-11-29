@@ -1,1 +1,1 @@
-web: thumbor -p $PORT
+web: ./runner.sh
